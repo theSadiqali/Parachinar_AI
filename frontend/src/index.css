@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Optional: floating chatbot styles */
+#chatbot {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 50;
+}
