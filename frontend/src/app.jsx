@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Navbar from "./components/navbar.jsx";
-import KnowledgeCard from "./components/KnowledgeCard";
-import Chatbot from "./components/Chatbot";
+import KnowledgeCard from "./components/KnowledgeCard.jsx";
+import Chatbot from "./components/ChatBot.jsx";
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
