@@ -18,7 +18,7 @@ const Chatbot = () => {
     setTyping(true);
 
     try {
-      const res = await fetch("https://parachinar-ai.onrender.com/chat", {
+      const res = await fetch("https://parachinar-ai-2.onrender.com/chat", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ prompt: input }),
