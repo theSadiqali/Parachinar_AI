@@ -1,16 +1,24 @@
-<!-- frontend/index.html -->
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Parachinar AI</title>
-    <script type="module" crossorigin src="/assets/index-df601c78.js"></script>
-    <link rel="stylesheet" href="/assets/index-3f2ddfc4.css">
-  </head>
-  <body>
-    <div id="root"></div> <!-- THIS IS REQUIRED -->
-    <div id="root"></div>
-    
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Parachinar AI Chat</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="chat-wrapper">
+    <div class="chat-header">
+      <span>Parachinar AI</span>
+      <button id="themeToggle">🌙</button>
+    </div>
+    <div class="chat-messages" id="chatMessages"></div>
+    <div class="chat-input">
+      <input type="text" id="userInput" placeholder="Type a message…" />
+      <button id="sendBtn">Send</button>
+    </div>
+  </div>
+
+  <script src="chat.js"></script>
+</body>
 </html>
