@@ -1,15 +1,15 @@
 import React, { useState, useEffect } from "react";
-import Navbar from "./components/navbar.jsx";
-import KnowledgeCard from "./components/KnowledgeCard.jsx";
-import Chatbot from "./components/ChatBot.jsx";
-import QiblaCompass from "./QiblaCompass"; 
-
+import Navbar from "./components/Navbar";
+import KnowledgeCard from "./components/KnowledgeCard";
+import Chatbot from "./components/Chatbot";
+import QiblaCompass from "./QiblaCompass"; // Manual compass component
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
   const [weather, setWeather] = useState(null);
   const [prayerTimes, setPrayerTimes] = useState(null);
 
+  // Fetch weather and prayer times
   useEffect(() => {
     fetch(
       "https://api.openweathermap.org/data/2.5/weather?q=Parachinar&units=metric&appid=0ed46feb58c6213070957e32a1acac58"
@@ -68,15 +68,19 @@ function App() {
           community. Ask our AI chatbot for more insights.
         </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        {/* Responsive Grid: Weather, Prayer Times, Qibla Compass, and other cards */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {knowledgeData.map((item, idx) => (
             <KnowledgeCard key={idx} {...item} />
           ))}
+
+          {/* Qibla Compass */}
+          <QiblaCompass />
         </div>
       </main>
 
-      <Chatbot />       {/* floating chatbot */}
-      <QiblaCompass />  {/* Qibla compass inline, below chatbot */}
+      {/* Floating chatbot */}
+      <Chatbot />
     </div>
   );
 }
