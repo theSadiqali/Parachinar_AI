@@ -16,8 +16,6 @@ const Navbar = () => {
       <ul className="flex gap-6 items-center">
         <li className="hover:text-indigo-500 dark:hover:text-indigo-300 cursor-pointer">Home</li>
         <li className="hover:text-indigo-500 dark:hover:text-indigo-300 cursor-pointer">History</li>
-        <li className="hover:text-indigo-500 dark:hover:text-indigo-300 cursor-pointer">Culture</li>
-        <li className="hover:text-indigo-500 dark:hover:text-indigo-300 cursor-pointer">Chatbot</li>
         <li onClick={() => setDarkMode(!darkMode)} className="cursor-pointer text-gray-600 dark:text-gray-300">
           {darkMode ? <FaSun /> : <FaMoon />}
         </li>
