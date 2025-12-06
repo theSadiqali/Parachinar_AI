@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
-import Navbar from "./components/Navbar";
-import KnowledgeCard from "./components/KnowledgeCard";
-import Chatbot from "./components/Chatbot";
-import QiblaCompass from "./QiblaCompass"; // Manual compass component
+import Navbar from "./components/navbar.jsx";
+import KnowledgeCard from "./components/KnowledgeCard.jsx";
+import Chatbot from "./components/ChatBot.jsx";
+import QiblaCompass from "./QiblaCompass.jsx"; // Manual compass component
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
