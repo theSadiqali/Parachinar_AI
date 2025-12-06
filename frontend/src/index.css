@@ -9,3 +9,69 @@
   right: 30px;
   z-index: 50;
 }
+
+
+
+/*  qibla css   */
+
+.qibla-card {
+  max-width: 200px;
+  margin: 20px auto;
+  padding: 15px;
+  background: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  transition: background 0.3s, color 0.3s;
+}
+
+body.dark .qibla-card {
+  background: #1e1e1e;
+  color: #f1f1f1;
+}
+
+.qibla-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.qibla-compass {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  border: 3px solid #333;
+  border-radius: 50%;
+  margin: 0 auto 10px;
+  background: #f9f9f9;
+}
+
+body.dark .qibla-compass {
+  border-color: #fff;
+  background: #2a2a2a;
+}
+
+.qibla-needle {
+  width: 3px;
+  height: 50%;
+  background: red;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform-origin: bottom center;
+  border-radius: 2px;
+}
+
+.qibla-degree {
+  font-size: 0.9rem;
+  margin: 5px 0;
+}
+
+.qibla-city {
+  font-size: 0.8rem;
+  color: #555;
+}
+
+body.dark .qibla-city {
+  color: #ccc;
+}
